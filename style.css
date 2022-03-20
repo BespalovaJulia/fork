@@ -1,0 +1,605 @@
+/**Подключение шрифтов**/
+@font-face {
+    font-family: 'ProstoOneRegular';
+    src: url('./fonts/ProstoOne-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'MontserratRegular';
+    src: url('./fonts/Montserrat-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'MontserratMedium';
+    src: url('./fonts/Montserrat-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'MontserratBold';
+    src: url('./fonts/Montserrat-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'ComfortaaLight';
+    src: url(./fonts/Comfortaa-Light.ttf);
+}
+
+html {
+    background-color: #002451;
+    background-image: url(image/fork1.png);
+    background-repeat: repeat;
+}
+
+body {
+    width: 70%;
+    height: 2900px;
+    margin: 0 auto;
+    background-color: #DADADB;
+    overflow-x: hidden;
+}
+
+.header {
+    background-color: black;
+    width: 100%;
+    height: 390px;
+    position: relative;
+}
+
+.header__title {
+    margin-top: -90px;
+    padding: 0;
+    color: #ffff;
+    text-align: center;
+    font-family: 'ProstoOneRegular';
+    font-size: 350px;
+}
+
+.header__subtitle_promo {
+    margin: 0 auto;
+    padding: 0;
+    color: #ffff;
+    font-family: 'MontserratBold';
+    font-size: 22px;
+    position: relative;
+    top: 80px;
+    left: 350px;
+}
+
+.header__subtitle_date {
+    margin: 0 auto;
+    padding: 0;
+    color: #ffff;
+    font-family: 'MontserratBold';
+    font-size: 22px;
+    position: relative;
+    top: 45px;
+    left: 1100px;
+}
+
+.header__text_series {
+    margin: 0 auto;
+    padding: 0;
+    color: #ffff;
+    font-family: 'MontserratRegular';
+    font-size: 30px;
+    font-weight: normal;
+    position: relative;
+    top: -90px;
+    left: 65px;
+}
+
+.header__text_pay {
+    margin: 0 auto;
+    padding: 0;
+    color: #ffff;
+    font-family: 'MontserratRegular';
+    font-size: 30px;
+    font-weight: normal;
+    position: relative;
+    top: -120px;
+    left: 840px;
+}
+
+.header__surname {
+    margin: 0 auto;
+    padding: 0;
+    color: #ffff;
+    font-family: 'MontserratRegular';
+    font-size: 18px;
+    font-weight: normal;
+    writing-mode: vertical-rl;
+    position: absolute;
+    top: 120px;
+    right: 150px;
+}
+
+.main__fork {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    height: 550px;
+}
+
+.qr__image {
+    position: relative;
+    right: 170px;
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    transition: transform .8s ease-in-out;
+}
+
+.qr__image:hover {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+.fork__image {
+    height: 45%;
+}
+
+.button__image img {
+    position: relative;
+    left: 170px;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+}
+
+.button__image img:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.watch {
+    padding-top: 20px;
+    background-color: #DADADBFF;
+    height: 650px;
+}
+
+.watch>h2 {
+    color: #393946;
+    font-size: 150px;
+}
+
+iframe {
+    display: block;
+    margin: auto;
+    max-width: 80%;
+    padding-top: 20px;
+}
+
+h2,
+h3 {
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    font-size: 100px;
+    font-family: 'ProstoOneRegular';
+}
+
+.need {
+    height: 500px;
+    padding-top: 20px;
+    background-color: #393946FF;
+    color: white;
+    padding-bottom: 60px;
+}
+
+.need__fork_text {
+    margin: 0 auto;
+    font-size: 45px;
+    line-height: 45px;
+    color: #8E8C8D;
+    font-family: 'ComfortaaLight';
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    z-index: 3;
+    padding-top: 50px;
+}
+
+.need__fork_text>span {
+    color: #E7E3E5;
+    font-family: 'ComfortaaLight';
+    font-weight: bold;
+}
+
+.say {
+    height: 700px;
+    padding-top: 20px;
+}
+
+.say__button img {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+}
+
+.say__button img:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.say__fork_triangle {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+}
+
+footer {
+    background-color: #1E2026;
+    height: 120px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.footer__text {
+    color: #DADADB;
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+    font-family: 'MontserratRegular';
+    padding-bottom: 20px;
+}
+
+@media screen and (max-device-width: 1920px) {
+    html {
+        background-color: #002451;
+    }
+
+    body {
+        width: 70%;
+        height: 2700px;
+    }
+
+    .header {
+        height: 280px;
+    }
+
+    .header__title {
+        margin-top: -90px;
+        font-size: 290px;
+    }
+
+    .header__subtitle_promo {
+        font-size: 19px;
+        position: relative;
+        top: 50px;
+        left: 370px;
+    }
+
+    .header__subtitle_date {
+        top: 20px;
+        left: 990px;
+    }
+
+    .header__text_series {
+        font-size: 20px;
+        position: relative;
+        bottom: 180px;
+        left: 165px;
+    }
+
+    .header__text_pay {
+        font-size: 20px;
+        bottom: 210px;
+        left: 870px;
+    }
+
+    .qr__image,
+    .button__image img {
+        right: 150px;
+    }
+
+    .need__fork_text {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+}
+
+@media screen and (max-device-width: 1880px) {
+    html {
+        background-color: red;
+        background-image: url(image/fork1.png);
+        background-repeat: repeat;
+    }
+
+    .header {
+        height: 290px;
+    }
+
+    .header__title {
+        margin-top: -90px;
+        font-size: 290px;
+    }
+
+    .header__subtitle_promo {
+        font-size: 19px;
+        position: relative;
+        top: 50px;
+        left: 355px;
+    }
+
+    .header__subtitle_date {
+        font-size: 19px;
+        position: relative;
+        top: 20px;
+        left: 900px;
+    }
+
+    .header__text_series {
+        font-size: 25px;
+        position: relative;
+        bottom: 180px;
+        left: 150px;
+    }
+
+    .header__text_pay {
+        font-size: 25px;
+        bottom: 220px;
+        left: 757px;
+    }
+
+    .header__surname {
+        font-size: 15px;
+        position: absolute;
+        top: 140px;
+        right: 121px;
+    }
+
+    .qr__image {
+        right: 100px;
+    }
+
+    .button__image img {
+        left: 100px;
+    }
+
+    .need__fork_text {
+        font-size: 35px;
+        line-height: 45px;
+    }
+
+}
+
+@media screen and (max-device-width: 1700px) {
+    html {
+        background-color: rgb(106, 243, 106);
+    }
+
+    .header__title {
+        margin-top: -90px;
+        font-size: 290px;
+    }
+
+    .header__subtitle_promo {
+        font-size: 19px;
+        position: relative;
+        top: 50px;
+        left: 295px;
+    }
+
+    .header__subtitle_date {
+        font-size: 19px;
+        position: relative;
+        top: 20px;
+        left: 870px;
+    }
+
+    .header__text_series {
+        font-size: 25px;
+        position: relative;
+        bottom: 180px;
+        left: 105px;
+    }
+
+    .header__text_pay {
+        font-size: 25px;
+        bottom: 220px;
+        left: 687px;
+    }
+
+    .header__surname {
+        font-size: 15px;
+        position: absolute;
+        top: 140px;
+        right: 70px;
+    }
+
+}
+
+@media screen and (max-device-width: 1640px) {
+    html {
+        background-color: rgb(236, 56, 227);
+    }
+
+    .header__title {
+        margin-top: -60px;
+        font-size: 250px;
+    }
+
+    .header__subtitle_promo {
+        font-size: 15px;
+        position: relative;
+        top: 55px;
+        left: 355px;
+    }
+
+    .header__subtitle_date {
+        font-size: 15px;
+        position: relative;
+        top: 35px;
+        left: 880px;
+    }
+
+    .header__surname {
+        font-size: 15px;
+        top: 120px;
+        right: 120px;
+    }
+
+    .header__text_series {
+        font-size: 20px;
+        position: relative;
+        top: -80px;
+        left: 150px;
+    }
+
+    .header__text_pay {
+        font-size: 20px;
+        top: -110px;
+        left: 700px;
+    }
+
+    h2,
+    h3 {
+        margin: 0 auto;
+        padding: 0;
+        text-align: center;
+        font-size: 90px;
+        font-family: 'ProstoOneRegular';
+    }
+
+    .need__fork_text {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .qr__image {
+        right: 70px;
+    }
+
+    .button__image img {
+        left: 80px;
+    }
+
+}
+
+@media screen and (max-device-width: 1550px) {
+    html {
+        background-color: rgb(90, 160, 241);
+    }
+
+    .header__title {
+        margin-top: -60px;
+        font-size: 240px;
+    }
+
+    .header__subtitle_promo {
+        font-size: 13px;
+        position: relative;
+        top: 55px;
+        left: 215px;
+    }
+
+    .header__subtitle_date {
+        font-size: 13px;
+        position: relative;
+        top: 35px;
+        left: 740px;
+    }
+
+    .header__surname {
+        font-size: 12px;
+        left: 410px;
+        bottom: 160px;
+    }
+
+    .header__text_series {
+        font-size: 20px;
+        position: relative;
+        bottom: 150px;
+        left: 45px;
+    }
+
+    .header__text_pay {
+        font-size: 20px;
+        bottom: 180px;
+        left: 550px;
+    }
+
+    .fork__image {
+        height: 35%;
+    }
+
+    h2,
+    h3 {
+        margin: 0 auto;
+        padding: 0;
+        text-align: center;
+        font-size: 80px;
+        font-family: 'ProstoOneRegular';
+    }
+
+}
+
+@media screen and (max-device-width: 1220px) {
+    html {
+        background-color: rgb(233, 99, 38);
+    }
+
+    .header__title {
+        margin-top: -60px;
+        font-size: 220px;
+    }
+
+    .header__subtitle_promo {
+        font-size: 13px;
+        position: relative;
+        top: 45px;
+        left: 215px;
+    }
+
+    .header__subtitle_date {
+        font-size: 13px;
+        position: relative;
+        top: 25px;
+        left: 650px;
+    }
+
+    .header__surname {
+        font-size: 12px;
+        left: 380px;
+        bottom: 160px;
+    }
+
+    .header__text_series {
+        font-size: 18px;
+        position: relative;
+        bottom: 145px;
+        left: 45px;
+    }
+
+    .header__text_pay {
+        font-size: 18px;
+        bottom: 170px;
+        left: 510px;
+    }
+
+    .fork__image {
+        height: 35%;
+    }
+
+    h2,
+    h3 {
+        font-size: 70px;
+    }
+
+    .need {
+        height: 400px;
+    }
+
+    .need__fork_text {
+        font-size: 25px;
+        line-height: 35px;
+    }
+}
